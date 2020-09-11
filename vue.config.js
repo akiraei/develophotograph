@@ -14,6 +14,7 @@ module.exports = {
             root: "markdown-body"
           }
         };
-      });
+      })
+      .end();
   }
 };
