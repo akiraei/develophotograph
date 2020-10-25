@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programming Look-and-Say 05 (TWIL)
+title: Programming Look-and-Say 06 (TWIL)
 categories: [programming]
 tags: [programming]
 ---
