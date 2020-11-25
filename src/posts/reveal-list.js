@@ -75,9 +75,9 @@ export default [
   "2020-07-03-programming-look-and-say-03",
   "2020-07-10-programming-look-and-say-04",
   "2020-07-17-programming-look-and-say-05",
-  "2020-07-24-programming-look-and-say-06"
-  // "2020-07-31",
-  // "2020-08-07",
+  "2020-07-24-programming-look-and-say-06",
+  "2020-07-31-loop-invariant",
+  "2020-08-07-insertion-sort"
   // "2020-08-14",
   // "2020-08-21",
   // "2020-08-28",
@@ -92,4 +92,6 @@ export default [
   // "2020-10-30"
   // "2020-11-06"
   // "2020-11-13"
+  // "2020-11-20"
+  // "2020-11-27"
 ];
