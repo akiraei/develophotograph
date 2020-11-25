@@ -1,7 +1,7 @@
 ---
 layout: post
 title: insertion-sort (TWIL)
-categories:[programming]
+categories: [programming]
 tags: [programming]
 ---
 
