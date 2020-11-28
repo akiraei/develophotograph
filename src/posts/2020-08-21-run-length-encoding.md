@@ -51,4 +51,4 @@ const decode = (string) => {
 const decoded = decode(encoded);
 
 console.log(decoded === string); //true
-``
+```
