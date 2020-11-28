@@ -11,30 +11,44 @@ tags: [programming]
 - 연속된 글자가 없다면 효율이 매우 떨어짐
 
 ```js
-const counter = (before, now, count) =>
-  before === now ? { key: 'add', value: count + 1 } : { key: 'change', value: now };
-
-const reducer = (string) => {
+const encode = (string) => {
+  // 알파벳만 존재하는 문자열만 가능
   let result = '';
   let count = 1;
+  let character = '';
   for (let i = 0; i < string.length; i++) {
     if (i === 0) {
-      result = result + string[i];
+      character = string[i];
     } else {
-      const object = counter(string[i - 1], string[i], count);
-      if (object.key === 'add') count = object.value;
-      if (object.key === 'change') {
-        re = re + String(count) + object.value;
+      if (string[i] === character) {
+        count++;
+      } else {
+        result = result + String(count) + character;
+        character = string[i];
         count = 1;
       }
     }
   }
-  result = result + String(count);
+  result = result + String(count) + character;
   return result;
 };
-```
 
-```js
 const string = 'aaaababbbbaaacccabacaaacaaa';
-reducer(string) // "a4b1a1b4a3c3a1b1a1c1a3c1a3"
-```
+const encoded = encode(string); // "4a1b1a4b3a3c1a1b1a1c3a1c3a"
+
+const decode = (string) => {
+  const array = string.split(/([a-zA-Z])/).filter((e) => Boolean(e));
+  if (array.length % 2 === 1) throw 'Error';
+  let result = '';
+  for (let i = 0; i < array.length / 2; i++) {
+    for (let j = 0; j < Number(array[2 * i]); j++) {
+      result = result + array[2 * i + 1];
+    }
+  }
+  return result;
+};
+
+const decoded = decode(encoded);
+
+console.log(decoded === string); //true
+``
