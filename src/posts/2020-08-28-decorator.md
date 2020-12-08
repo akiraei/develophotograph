@@ -5,10 +5,7 @@ categories: [programming, js]
 tags: [programming, js]
 ---
 
-# 데코레이터[https://ui.toast.com/weekly-pick/ko_20200102]
-
-- 정리가 잘되어 있는 컬럼
-- 음... 너무 날로 먹나
+# 데코레이터
 
 ## 자바스크립트의 데코레이터
 - 데코레이터 '함수'

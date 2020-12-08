@@ -79,8 +79,8 @@ export default [
   "2020-07-31-loop-invariant",
   "2020-08-07-insertion-sort",
   "2020-08-14-divide-and-conquer",
-  "2020-08-21-run-length-encoding"
-  // "2020-08-28",
+  "2020-08-21-run-length-encoding",
+  "2020-08-28-decorator"
   // "2020-09-04",
   // "2020-09-11"
   // "2020-09-18"
